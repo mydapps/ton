@@ -1,0 +1,19 @@
+int op::transfer() asm "0xf8a7ea5 PUSHINT";
+int op::transfer_notification() asm "0x7362d09c PUSHINT";
+int op::internal_transfer() asm "0x178d4519 PUSHINT";
+int op::excesses() asm "0xd53276db PUSHINT";
+int op::burn() asm "0x595f07bc PUSHINT";
+int op::burn_notification() asm "0x7bdd97de PUSHINT";
+
+;; Minter
+int op::mint() asm "21 PUSHINT";
+
+;; Additional op-codes for bonded curve and other operations
+int op::buy_tokens() asm "0x22222222 PUSHINT";
+int op::sell_tokens() asm "0x33333333 PUSHINT";
+int op::create_token() asm "0x44444444 PUSHINT";
+int op::set_bonded_curve_address() asm "0x55555555 PUSHINT";
+
+;; Add these new operations
+int op::change_admin() asm "0x4840664f PUSHINT";
+int op::change_content() asm "0x5773d1f5 PUSHINT";
